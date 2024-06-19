@@ -1,0 +1,8 @@
+<button
+  class="btn-element"
+  (click)="alertClick()"
+  [disabled]="isDisabled"
+  [class]="{
+    'btn-element--white': classBgColor === 'white',
+    'btn-element--purple': classBgColor === 'purple',
+  }">{{ btnText }}</button>
